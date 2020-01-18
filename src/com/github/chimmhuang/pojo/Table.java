@@ -1,8 +1,5 @@
 package com.github.chimmhuang.pojo;
 
-import com.github.chimmhuang.config.ConnectionConfig;
-import com.github.chimmhuang.config.ConnectionConfig.Builder;
-
 import java.util.List;
 
 /**
