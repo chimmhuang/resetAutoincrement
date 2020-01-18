@@ -1,18 +1,22 @@
 package com.github.chimmhuang.pojo;
 
-
+/**
+ * @author Chimm Huang
+ */
 public class Field {
     private String fieldName;
     private String fieldType;
     private Integer fieldLength;
+    private Boolean isAutoincrement;
 
     public Field() {
     }
 
-    public Field(String fieldName, String fieldType, Integer fieldLength) {
+    public Field(String fieldName, String fieldType, Integer fieldLength, Boolean isAutoincrement) {
         this.fieldName = fieldName;
         this.fieldType = fieldType;
         this.fieldLength = fieldLength;
+        this.isAutoincrement = isAutoincrement;
     }
 
     public String getFieldName() {
@@ -39,9 +43,21 @@ public class Field {
         this.fieldLength = fieldLength;
     }
 
-    @Override
-    public String toString() {
-        return "Field [fieldName=" + fieldName + ", fieldType=" + fieldType + ", fieldLength=" + fieldLength + "]";
+    public Boolean getAutoincrement() {
+        return isAutoincrement;
     }
 
+    public void setAutoincrement(Boolean autoincrement) {
+        isAutoincrement = autoincrement;
+    }
+
+    @Override
+    public String toString() {
+        return "Field{" +
+                "fieldName='" + fieldName + '\'' +
+                ", fieldType='" + fieldType + '\'' +
+                ", fieldLength=" + fieldLength +
+                ", isAutoincrement=" + isAutoincrement +
+                '}';
+    }
 }
