@@ -93,7 +93,7 @@ public class ActuatorImpl implements Actuator {
                         try {
                             Table table = entry.getValue();
                             String primaryKeyValue = getTheLastPrimaryKeyValue(table.getTableName(), table.getPrimaryKey());
-                            long value = Long.parseLong(primaryKeyValue == null ? "1" : primaryKeyValue);
+                            long value = Long.parseLong(primaryKeyValue == null ? "0" : primaryKeyValue);
                             value++;
 
                             boolean resetFlag = resetAutoincrementValue(table.getTableName(), String.valueOf(value));
