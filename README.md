@@ -1,5 +1,11 @@
 # MySql 主键自增重置器
 
+<p align="left">
+	<img src='https://img.shields.io/github/license/chimmhuang/resetAutoincrement' alt='lisence'></img>
+	<img src="https://img.shields.io/badge/JDK-1.8%2B-red" alt='jdk'></img>
+	<img src="https://img.shields.io/badge/mysql-5.7-blue" alt='mysql'></img>
+</p>
+
 #### 介绍
 `resetAutoincrement` 是一款基于 `Java` 开发的程序，其功能为重置 `mysql` 主键自增的值为最近的一个。
 
@@ -9,9 +15,12 @@
 
 #### Todo List
 * [ ] 考虑到数据库配置的扩展性，后期会将程序改为从配置文件中获取数据库连接的配置信息
-* [ ] TODO：录制gif上传
+* [X] 录制程序演示视频
 
 #### 程序演示
+| 视频网站 | 地址 |
+| :-- | :-- |
+| 哔哩哔哩 | [https://www.bilibili.com/video/av84268614](https://www.bilibili.com/video/av84268614) |
 
 #### 目录结构
 
@@ -31,13 +40,13 @@
 CREATE TABLE `demo` (
   `id` int(10) NOT NULL AUTO_INCREMENT COMMENT '主键',
   PRIMARY KEY (`id`) USING BTREE
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 ROW_FORMAT=DYNAMIC COMMENT='demo数据库';
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8mb4 ROW_FORMAT=DYNAMIC COMMENT='demo数据库';
 
 CREATE TABLE `demo02` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `remarks` varchar(32) DEFAULT NULL,
   PRIMARY KEY (`id`) USING BTREE
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 ROW_FORMAT=DYNAMIC COMMENT='demo02数据库';
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8mb4 ROW_FORMAT=DYNAMIC COMMENT='demo02数据库';
 ```
 2. 在`config`目录下配置好数据库的连接信息
 3. 在`run`目录下启动`main`方法即可执行
