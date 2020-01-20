@@ -21,6 +21,7 @@
 | 视频网站 | 地址 |
 | :-- | :-- |
 | 哔哩哔哩 | [https://www.bilibili.com/video/av84268614](https://www.bilibili.com/video/av84268614) |
+| Youtube | [https://youtu.be/cd724k13Z5I](https://youtu.be/cd724k13Z5I) |
 
 #### 目录结构
 
